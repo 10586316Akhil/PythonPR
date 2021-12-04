@@ -76,7 +76,7 @@ def computeAllPayment(empFileName, HoursFileName):
                         finalResult.append(pay)
     print(finalResult)
     def main():
-    computeAllPayment(r"C:\Users\sidds\OneDrive\Desktop\Python_CA_One\Employees.txt", r"C:\Users\sidds\OneDrive\Desktop\Python_CA_One\Hours.txt")
+    computeAllPayment(r"C:\Users\AKHIL\Documents\AP pythonCA1\data\Employees.txt", r"C:\Users\AKHIL\Documents\AP pythonCA1\data\Hours.txt")
 
 
 class EmployeeTest(unittest.TestCase): #creating a Employeetest class for unit test
@@ -152,3 +152,8 @@ class EmployeeTest(unittest.TestCase): #creating a Employeetest class for unit t
         e2 = Employee(923696, 'Landon', 'Steve', 39, 12, 0.5, 60, 955) 
         pi2= e2.computePayment(48,'12/11/2021')
         self.assertGreater(pi2['Net Pay'],1)
+         #Running the tests below line
+
+if __name__ == "__main__":
+    main()
+    unittest.main()
