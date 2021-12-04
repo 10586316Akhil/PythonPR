@@ -13,3 +13,18 @@ class Employee:
         self.OTMultiple = float(OTMultiple)
         self.TaxCredit = int(TaxCredit)
         self.StandardBand = int(StandardBand)
+        
+
+    def computePayment(self, hours, date):
+        OTRate = float(self.HourlyRate * self.OTMultiple)
+        OT = 0
+        if(hours > self.RegHours):
+            OT = hours - self.RegHours
+
+        RegularPay = (hours - OT) * self.HourlyRate
+        OTPay = OT * OTRate
+        GrossPay = RegularPay + OTPay
+
+        HigherPay = 0
+        if(GrossPay > RegularPay):
+            HigherPay = GrossPay - self.StandardBand
