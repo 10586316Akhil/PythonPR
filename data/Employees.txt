@@ -1,4 +1,3 @@
 12345 Green Joe 37 16 1.5 70 700
 12346 Deo Jhon 32 18 1.5 80 800
-12356 Akhil Shirole 43 71 1.5 90 900
-1234458 Shane John 39 12 2.6 50 825
+12347 Shane John 39 12 2.6 50 825
